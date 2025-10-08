@@ -5,13 +5,25 @@
 // - Se o número é par ou ímpar
 // Use o operador `%` (módulo) e exiba no console o resultado.
 // ----------------------------------------
+let numero = 12;
 
+if (numero % 2 === 0) {
+    console.log(numero + " é par!");
+} else {
+    console.log(numero + " é impar!")
+}
 // ----------------------------------------
 // 2. Crie uma variável `idade` e verifique se ela é maior ou igual a 18.
 // - Se for, exiba "Maior de idade"
 // - Caso contrário, exiba "Menor de idade"
 // ----------------------------------------
+let idade = 18;
 
+if (idade >= 18){
+    console.log("Maior de idade!")
+} else {
+    console.log("Menor de idade!")
+}
 // ----------------------------------------
 // 3. Crie uma variável `numero` e verifique se ele é:
 // - Positivo
@@ -19,6 +31,16 @@
 // - Ou zero
 // Use if...else if...else para as três condições.
 // ----------------------------------------
+
+let numero2 = 0;
+
+if (numero2 > 0){
+    console.log(numero2 + " é positivo.")
+} else if (numero2 < 0){
+    console.log(numero2 + " é negativo.")
+} else {
+    console.log(numero2 + " é zero.")
+}
 
 // ----------------------------------------
 // 4. Crie duas variáveis `nota1` e `nota2`.
@@ -28,12 +50,32 @@
 // - Caso contrário → "Reprovado"
 // ----------------------------------------
 
+let nota1 = 6;
+let nota2 = 4;
+let media = (nota1 + nota2)/2;
+
+if (media >= 7){
+    console.log("Aprovado!")
+} else if (media >= 5){
+    console.log("Recuperação!")
+}else {
+    console.log("Reprovado!")
+}
+
 // ----------------------------------------
 // 5. Crie uma variável `totalCompra`.
 // - Se o valor for maior que 100, aplique 10% de desconto.
 // - Exiba o valor final da compra com e sem desconto.
 // Use operadores matemáticos para o cálculo.
 // ----------------------------------------
+
+let totalCompra = 120;
+
+if(totalCompra > 100){
+    console.log( "Valor total da compra com desconto é : "+ (totalCompra * 0.9) )
+}else{
+    console.log ("Valor total da compra é: " + totalCompra)
+}
 
 // ----------------------------------------
 // 6. Crie duas variáveis `usuario` e `senha` com valores pré-definidos.
