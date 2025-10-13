@@ -19,7 +19,7 @@ if (numero % 2 === 0) {
 // ----------------------------------------
 let idade = 18;
 
-if (idade >= 18){
+if (idade >= 18) {
     console.log("Maior de idade!")
 } else {
     console.log("Menor de idade!")
@@ -34,9 +34,9 @@ if (idade >= 18){
 
 let numero2 = 0;
 
-if (numero2 > 0){
+if (numero2 > 0) {
     console.log(numero2 + " é positivo.")
-} else if (numero2 < 0){
+} else if (numero2 < 0) {
     console.log(numero2 + " é negativo.")
 } else {
     console.log(numero2 + " é zero.")
@@ -52,13 +52,13 @@ if (numero2 > 0){
 
 let nota1 = 6;
 let nota2 = 4;
-let media = (nota1 + nota2)/2;
+let media = (nota1 + nota2) / 2;
 
-if (media >= 7){
+if (media >= 7) {
     console.log("Aprovado!")
-} else if (media >= 5){
+} else if (media >= 5) {
     console.log("Recuperação!")
-}else {
+} else {
     console.log("Reprovado!")
 }
 
@@ -71,10 +71,10 @@ if (media >= 7){
 
 let totalCompra = 120;
 
-if(totalCompra > 100){
-    console.log( "Valor total da compra com desconto é : "+ (totalCompra * 0.9) )
-}else{
-    console.log ("Valor total da compra é: " + totalCompra)
+if (totalCompra > 100) {
+    console.log("Valor total da compra com desconto é : " + (totalCompra * 0.9))
+} else {
+    console.log("Valor total da compra é: " + totalCompra)
 }
 
 // ----------------------------------------
@@ -84,6 +84,19 @@ if(totalCompra > 100){
 // - Caso contrário, "Acesso negado"
 // Use o operador lógico && (E).
 // ----------------------------------------
+let usuario = 'adm123';
+let senha = 1234;
+
+let loginUsuario = 'adm123';
+let loginSenha = "1234";
+let loginSenhaNumerico = Number(loginSenha); // para tranformar qualquer entrada em numero
+
+if (usuario === loginUsuario && senha === loginSenhaNumerico) {
+    console.log("Login Bem-sucedido!")
+} else {
+    console.log("Acesso negado!")
+}
+
 
 // ----------------------------------------
 // 7. Crie uma variável `numero` e verifique se ele está entre 10 e 50 (inclusive).
@@ -91,12 +104,32 @@ if(totalCompra > 100){
 // Use operadores relacionais (>= e <=) e o operador lógico &&.
 // ----------------------------------------
 
+let numeroIntervalo = 9;
+
+if (numeroIntervalo >= 10 && numeroIntervalo <= 50) {
+    console.log("Dentro do intervalo.")
+} else {
+    console.log("Fora do intervalo.")
+}
+
 // ----------------------------------------
 // 8. Crie três variáveis `a`, `b`, `c`.
 // - Descubra qual é o maior número entre elas.
 // - Exiba no console o maior valor.
 // Use if...else if...else.
 // ----------------------------------------
+
+let a = 3;
+let b = 4;
+let c = 9;
+
+if (a > b && a > c) {
+    console.log('o "a" é o maior número !')
+} else if (b > a && b > c) {
+    console.log('o "b" é o maior número!')
+} else {
+    console.log('o "c" é o maior número !')
+}
 
 // ----------------------------------------
 // 9. Crie uma variável `dia` (número de 1 a 7).
@@ -110,7 +143,33 @@ if(totalCompra > 100){
 // 7 - Sábado
 // Caso o número não esteja entre 1 e 7, exiba "Dia inválido".
 // ----------------------------------------
+let dia = 9;
 
+switch (dia) {
+    case 1:
+        console.log('Domingo');
+        break;
+    case 2:
+        console.log('Segunda');
+        break;
+    case 3:
+        console.log('Terça');
+        break;
+    case 4:
+        console.log('Quarta');
+        break;
+    case 5:
+        console.log('Quinta');
+        break;
+    case 6:
+        console.log('Sexta');
+        break;
+    case 7:
+        console.log('Sábado');
+        break;
+    default:
+        console.log('Dia inválido!')
+}
 // ----------------------------------------
 // 10. Crie uma calculadora simples com três variáveis:
 // - `num1`, `num2` e `operacao`
@@ -118,3 +177,30 @@ if(totalCompra > 100){
 // Use `switch` para realizar o cálculo correspondente
 // e exibir o resultado no console.
 // ----------------------------------------
+
+let num1 = 2;
+let num2 = 0;
+let operacao = '/';
+let resultado;
+
+switch (operacao) {
+    case '+':
+        resultado = num1 + num2;
+        console.log('O resultado da soma é ' + resultado);
+        break;
+    case '-':
+        console.log('O resultado da subtração é', num1 - num2);
+        break;
+    case '*':
+        console.log('O resultado da multiplicação é', num1 * num2);
+        break;
+    case '/':
+        if (num2 !== 0) {
+            console.log('O resultado da divisão é ', num1 / num2);
+        } else {
+            console.log('Não é possivel dividir por zero!');
+        }
+        break;
+    default:
+        console.log('Operação Invalida!');
+}
