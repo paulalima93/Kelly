@@ -51,6 +51,28 @@ if (par) {                      // sempre o true vai ser o if e o falso vai ser 
 let variavel = 8 >= 9;
 console.log(variavel);
 // 6️ - Crie uma função converterParaCelsius(fahrenheit) que converte e retorna em Celsius.
+function converterParaCelcius(fahrenheit) {
+    let Celsius = (fahrenheit - 32) * 5 / 9;
+    console.log(`A temperatura ${fahrenheit}°F é ${Celsius}°C .`)
+}
+
+converterParaCelcius(32);
+
 // 7️ - Crie uma função mediaNotas(n1, n2, n3) que retorna a média e exibe se está aprovado.
+
+function mediaNotas(n1, n2, n3) {
+    let media = (n1 + n2 + n3) / 3;
+
+    return media;
+}
+
+const media = mediaNotas(3, 4, 9);
+
+if (media >= 6) {
+    console.log(`A média é ${media.toFixed(2)} o aluno está aprovado!`);
+} else {
+    console.log(`A média é ${media.toFixed(2)} o aluno está reprovado!`)
+}
+
 
 
